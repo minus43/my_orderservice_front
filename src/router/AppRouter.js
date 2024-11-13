@@ -1,4 +1,4 @@
-import Home from '../components/Home';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import MemberCreate from '../components/MemberCreate';
 import LoginPage from '../components/LoginPage';
@@ -7,6 +7,7 @@ import OrderPage from '../components/OrderPage';
 import MyPage from '../components/MyPage';
 import ProductCreate from '../components/ProductCreate';
 import PrivateRouter from './PrivateRouter';
+import Home from '../components/Home';
 
 const AppRouter = () => {
   return (

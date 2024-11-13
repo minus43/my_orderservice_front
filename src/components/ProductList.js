@@ -15,12 +15,11 @@ import {
   TextField,
   Typography,
 } from '@mui/material';
-import React, { useContext, useState, useEffect } from 'react';
-
+import React, { useContext, useEffect, useState } from 'react';
+import AuthContext from '../context/UserContext';
 import CartContext from '../context/CartContext';
 import axios from 'axios';
 import { throttle } from 'lodash';
-import AuthContext from '../context/UserContext';
 
 const ProductList = ({ pageTitle }) => {
   const [searchType, setSearchType] = useState('optional');

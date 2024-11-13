@@ -10,7 +10,7 @@ import {
 import React, { useContext, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../configs/axios-config';
-import { handleAxiosError } from '../configs/HandleaxiosError';
+import { handleAxiosError } from '../configs/HandleAxiosError';
 import AuthContext from '../context/UserContext';
 
 const ProductCreate = () => {
@@ -20,8 +20,8 @@ const ProductCreate = () => {
   const [stockQuantity, setStockQuantity] = useState('');
   const [imageThumbnail, setImageThumbnail] = useState(null);
   const [productImage, setProductImage] = useState(null);
-  const navigate = useNavigate();
   const { onLogout } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   // useRef를 사용하여 특정 태그를 참조하기
   const $fileTag = useRef();
@@ -48,8 +48,8 @@ const ProductCreate = () => {
         },
       );
 
-      alert('상품등록 완료!');
-      navigate('product/list');
+      alert('상품 등록 완료!');
+      navigate('/product/list');
     } catch (e) {
       handleAxiosError(e, onLogout, navigate);
     }
@@ -78,13 +78,16 @@ const ProductCreate = () => {
               <form onSubmit={productCreate}>
                 <div
                   className='thumbnail-box'
-                  style={{ display: 'flex', justifyContent: 'center' }}
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                  }}
                   onClick={() => $fileTag.current.click()}
                 >
                   <img
+                    style={{ maxWidth: '225px' }}
                     src={imageThumbnail || require('../assets/image-add.png')}
                     alt='prod-image'
-                    style={{ maxWidth: '255px' }}
                   />
                 </div>
                 <TextField

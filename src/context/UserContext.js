@@ -15,7 +15,7 @@ const AuthContext = React.createContext({
 export const AuthContextProvider = (props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userRole, setUserRole] = useState('');
-  const [isInit, setIsInit] = useState(false);
+  const [isInit, setIsInit] = useState(false); // 초기화 완료 상태 추가
 
   useEffect(() => {
     const token = localStorage.getItem('ACCESS_TOKEN');

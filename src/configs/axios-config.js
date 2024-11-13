@@ -4,6 +4,7 @@
 // axios 인스턴스는 token이 필요한 모든 요청에 활용 될 것입니다.
 
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 // Axios 인스턴스 생성
 const axiosInstance = axios.create({
