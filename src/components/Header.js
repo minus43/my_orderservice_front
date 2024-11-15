@@ -3,7 +3,6 @@ import {
   Button,
   Container,
   Grid,
-  Grid2,
   Toolbar,
   Typography,
 } from '@mui/material';

@@ -13,7 +13,6 @@ import {
 } from '@mui/material';
 import React, { useContext } from 'react';
 import CartContext from '../context/CartContext';
-import axios from 'axios';
 import axiosInstance from '../configs/axios-config';
 import AuthContext from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
