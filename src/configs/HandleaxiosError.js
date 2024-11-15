@@ -8,6 +8,7 @@ export const handleAxiosError = (error, onLogout, navigate) => {
     navigate('/');
   } else {
     // 만약 추가해야 할 예외 타입이 더 있다면 else if로 추가해서 써주시면 됩니다.
+    // 주석
     throw error;
   }
 };
