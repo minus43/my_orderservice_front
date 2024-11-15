@@ -16,7 +16,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import axiosInstance from '../configs/axios-config';
 import AuthContext from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
-import { handleAxiosError } from '../configs/HandleAxiosError';
+import { handleAxiosError } from './../configs/HandleAxiosError';
 
 const OrderListComponent = ({ isAdmin }) => {
   const [orderList, setOrderList] = useState([]);
