@@ -14,7 +14,7 @@ import axiosInstance from '../configs/axios-config';
 import AuthContext from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 import OrderListComponent from './OrderListComponent';
-import { handleAxiosError } from './../configs/HandleAxiosError';
+import { handleAxiosError } from '../configs/HandleAxiosError';
 
 const MyPage = () => {
   const [memberInfoList, setMemberInfoList] = useState([]);
