@@ -10,7 +10,7 @@ import {
 import React, { useContext, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../configs/axios-config';
-import { handleAxiosError } from '../configs/HandleAxiosError';
+import handleAxiosError from '../configs/HandleAxiosError';
 import AuthContext from '../context/UserContext';
 
 const ProductCreate = () => {
